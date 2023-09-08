@@ -1,0 +1,75 @@
+/* Default styles for all screen sizes */
+.shopTitle {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 20px;
+}
+
+.product {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.product .description {
+  text-align: center;
+}
+
+.addToCartBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+
+.addToCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
+
+/* Media query for screens larger than 768px*/
+@media (min-width: 768px) {
+  .shopTitle {
+    margin-top: 100px;
+    font-size: 40px;
+  }
+
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .product {
+    width: 300px;
+    height: 350px;
+    margin: 100px;
+  }
+
+  .product img {
+    width: 400px;
+  }
+}
