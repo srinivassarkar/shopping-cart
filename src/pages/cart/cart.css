@@ -83,31 +83,3 @@
     padding: 10px;
   }
 }
-/* Additional media queries for smaller screens */
-@media (max-width: 576px) {
-  .cartItem {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cartItem img {
-    max-width: 150px;
-  }
-
-  .cartItem .description {
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .checkout {
-    text-align: center; /* Center align checkout buttons */
-  }
-
-  .checkout button {
-    width: 100%; /* Make the buttons full width */
-    margin: 10px 0; /* Add some vertical spacing between buttons */
-  }
-}
-
